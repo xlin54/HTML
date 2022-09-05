@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--<script src="script.js"></script>-->
+<style>
+
+* {
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	width:100%;
+}
+
+.header{
+	background-color:#00ff00
+}
+
+.header h1{
+	padding: 40px;
+	text-align:center;
+}
+
+
+.video-section{
+	padding: 16px;
+	background-color:#99ff99
+}
+.image-section{
+	padding: 16px;
+	background-color: #ccffcc
+}
+
+.third-section{
+	padding: 16px;
+	background-color:#99ff99
+}
+
+.footer{
+	background-color:#00ff00
+}
+.footer h1{
+	text-align:center;
+	padding: 10px;
+}
+
+.move-left{
+	float:left;
+	
+}
+
+
+
+
+
+@media only screen and (max-width:800px){
+	.video-section{
+	width: 30%;
+	float:left;
+	height: 430px;
+	padding: 16px;
+}
+.image-section{
+	width: 30%;
+	float:left;
+	height: 430px;
+	padding: 16px;
+}
+
+.third-section{
+	width: 30%;
+	float:left;
+	height: 430px;
+	padding: 16px;
+}
+
+
+
+}
+
+
+@media only screen and (min-width:800px){
+	.video-section{
+	width: 30%;
+	float:left;
+	height: 430px;
+	padding: 16px;
+}
+.image-section{
+	width: 30%;
+	float:left;
+	height: 430px;
+	padding: 16px;
+}
+
+.third-section{
+	width: 30%;
+	float:left;
+	height: 430px;
+	padding: 16px;
+}
+
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- first webpage-->
+<!-- div is a block and used to section, we can put a div inside of a div-->
+<div class="wrapper">
+	<div class="header">
+		<h1>Online Resources</h1>
+	</div>
+
+	<div class="video-section">
+		<h2>Videos and Audio</h2>
+		<br>
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=7huMYp7WpsI">YouTube Website</a></li>
+			<br>
+			<li><a href="https://www.dailymotion.com/video/x33r13o">DailyMotion Website</a></li>
+			<br>
+			<li><a href="https://vimeo.com/208916667">Vimeo Website</a></li>
+			<br>
+			<br>
+			<li><iframe width="300" src="https://www.youtube.com/embed/7huMYp7WpsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+			<br>
+			<br>
+			<br>
+			<li>
+				<audio controls>
+					<source src="main.mp3" type="audio/mpeg">
+				</audio>					
+			</li>
+			<br>
+		</ul>
+	</div>
+	
+	<div class="image-section">
+		<h2>Art Works and PDF</h2>
+		<br>
+		<ul>
+			<li><a href="https://images.app.goo.gl/UoK7Lki52TsLdn6e8">LandScape</a></li>
+			<br>
+			<li><a href="https://images.app.goo.gl/WYQWPp2pmhgGn7oQ6">Portrait </a></li>
+			<br>
+			<li><a href="https://web.stanford.edu/class/cs248/pdf/class_03_animation.pdf" target="_blank"><b>PDF </B></a></li>
+			<!--<embed src="class_03_animation.pdf" width="400" height="180"></embed>-->
+			<br>
+			<br>
+		</ul>
+	    <h2>Free Art Teaching Materials Online</h2>
+		<table>
+			<ol>
+				<script>
+					var cars = ["1. digitalartsonline", "2. mymodernmet", "3. kitchentableclassroom"];
+					var i = 0;
+					while (cars[i]) {
+					document.write(cars[i] + "<br/>" + "<br/>")
+					i++;
+					}
+
+				</script>
+			</ol>
+			<br>
+			<button id="button" onclick="handle(this)"><h1>Click Me!<h1></button>
+			<script>
+				function handle(element){
+				element.innerHTML="<h3>Art job are low in supply so you must stand out from competitors or get a second job. Art director job is competitive. For animator job, only 1/400 people get hired. Sculptor jobs are extremely hard to find.  </h3>"
+				element.style="background-color:#ffff00;"
+				}
+			</script>			
+		</table>
+	</div>
+	
+	<div class="third-section">
+<script>
+var animator = "animator";
+var artDirector = "art director";
+var sculptor = "sculptor";
+var guess = "";
+
+  guess = prompt ("Enter art director, or sculptor, or animator in lower case");
+  if (guess == animator){
+	document.write("<h2>Education for an animator: </h2>"+"<br/>")
+	document.write("typically require a bachelor’s degree"+"<br/>"+"<br/>"+"<br/>")
+    document.write("<h2>Salary for animator: </h2>"+"<br/>")
+	document.write("salary is $60k-130K per year"+"<br/>"+"<br/>"+"<br/>")
+	document.write("<h2>Animator Annual Salary Comparison by Location:</h2>"+"<br/>")
+	document.write("Lakes, AK	$75,777"+"<br/>"+	
+				    "San Francisco, CA	$74,673	" +"<br/>"+
+					"Santa Clara, CA	$74,416"+"<br/>")
+	guess = animator
+} else if (guess == artDirector){
+	document.write("<h2>Education for an art director: </h2>"+"<br/>")
+	document.write("usually require a bachelor of arts or bachelor of fine arts degree."+"<br/>")
+	document.write("Some art directors earn a master of fine arts (MFA) degree "+"<br/>"+"<br/>"+"<br/>")
+    document.write("<h2>Salary for art director: </h2>"+"<br/>")
+	document.write("salary is $70k-140K per year"+"<br/>"+"<br/>"+"<br/>")
+	document.write("<h2>Art Director Annual Salary Comparison by Job Title:</h2>"+"<br/>")
+	document.write("Technical Art Director	$108,713"+"<br/>"+	
+				    "Freelance Art Director	$105,435	" +"<br/>"+
+					"Group Art Supervisor	$97,001"+"<br/>")
+	guess = animator
+  }else if (guess == sculptor){
+	document.write("<h2>Education for a sculptor: </h2>"+"<br/>")
+	document.write("Although a degree from a college is not required"+"<br/>")
+	document.write("many sculptors complete a formal education"+"<br/>"+"<br/>"+"<br/>")
+    document.write("<h2>Salary for sculptor: </h2>"+"<br/>")
+	document.write("salary is $34k-80K per year"+"<br/>"+"<br/>"+"<br/>")
+	document.write("<h2>Animator Annual Salary Comparison by Job Title:</h2>"+"<br/>")
+	document.write("Digital Sculptor	$62,932"+"<br/>"+	
+				    "Digital Sculpting	$56,949	" +"<br/>"+
+					"Sculpture Instructor	$48,418"+"<br/>")
+	guess = animator
+  }
+    else {
+	document.write("<h2>Error! you did not enter correctly, please refresh the browser to try again!<h2>")	
+}
+
+</script>
+	</div>
+
+	<div class="footer">
+		<p><a href="mailto:xlin5@albany.edu"><h1>Send Email<h1></a></p>
+	</div>
+</div>
+
+<br>
+<hr>
+<br>
+
+<!-- second webpage-->
+<div class="wrapper">
+	<div class="header">
+		<h1>On Campus</h1>
+	</div>
+	
+	<div class="video-section">
+		<h2>Best Schools for Art</h2>
+		<br>
+		<ul>
+			<li><a href="https://www.alfred.edu/academics/colleges-schools/art-design/index.cfm">SUNY Alfred</a></li>			
+			<br>
+			<li><a href="https://www.fitnyc.edu/">CUNY Fit</a></li>
+			<br>
+			<li><a href="https://arts.columbia.edu/visual-arts">Columbia University</a></li>
+			<br>
+			<br>
+			<li><iframe width="300" src="https://www.youtube.com/embed/wddMGDPUunE" title="YouTube video player" frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</li>
+			<br>
+			<br>
+			<br>
+			<li>
+				<audio controls>
+					<source src="backup.mp3" type="audio/mpeg">
+				</audio>
+			</li>
+		</ul>		
+	</div>
+	
+	<div class="image-section">
+		<h2>Ranking for Art Major</h2>
+		<br>
+		<ul>
+			<li>24</li>
+			<br>
+			<li>60</li>
+			<br>
+			<li>137</li>
+			<br>
+			<br>
+			<!--<embed src="class_03_animation.pdf" width="400" height="180"></embed>-->
+		</ul>
+		
+		<h2>In State Tuition</h2>
+		<table>
+			<ol>
+				<li>$16,718 USD</li>
+				<br>
+				<li>$12,165 USD</li>
+				<br>
+				<li>$61,788 USD</li>
+				<br>
+				<br>
+			<button id="button" onclick="handleClick(this)"><h1>Click Me!<h1></button>
+			<script>
+				function handleClick(element){
+				element.innerHTML="<h3>If the art major you choose makes little money, you can find a steady job to support your hobby.</h3>"
+				element.style="background-color:#ffff00;"
+				}
+			</script>
+			</ol>
+		</table>
+	</div>
+	
+	<div class="third-section">
+		<h2> Click this image to access embeded Image</h2>
+		<br>
+		<a href="https://images.app.goo.gl/hokAzbvAbiBU9CeF8" target="_blank">
+		<img src="School.JPG" alt="Trulli" width= 100% height="360" alt="Embedded Image Girl">
+	</div>
+	
+	<div class="footer">
+		<p><a href="mailto:xlin5@albany.edu"><h1>Send Email<h1></a></p>
+	</div>
+</div>
+
+<br>
+<hr>
+<br>
+
+<!-- third webpage-->
+<div class="wrapper">
+	<div class="header">
+		<h1>Online Degrees</h1>
+	</div>
+	
+
+	<div class="video-section">
+		<h2>Best Online Schools for Art</h2>
+		<br>
+		<ul>
+			<li><a href="https://www.rmcad.edu/">Rocky Mountain College of Art + Design</a></li>
+			<br>
+			<li><a href="https://www.liberty.edu/residential/communication-and-the-arts/bachelors/bfa-in-studio-art/">Liberty University</a></li>
+			<br>
+			<li><a href="https://www.cmich.edu/colleges/cam/ART/Pages/default.aspx">Central Michigan University</a></li>
+			<br>
+			<br>
+			<li>
+				<iframe width="300"  src="https://www.youtube.com/embed/ljzsWeRzQkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</li>
+			<br>
+			<br>
+			<br>
+			<li>
+				<audio controls>
+					<source src="proCon.mp3" type="audio/mpeg">
+				</audio>					
+			</li>
+			<br>
+		</ul>
+	</div>
+	
+	<div class="image-section">
+		<h2>Ranking for Art Major</h2>
+		<br>
+		<ul>
+			<li>93</li>
+			<br>
+			<li>298</li>
+			<br>
+			<li>249</li>
+			<br>
+			<br>
+		</ul>
+
+	    <h2>In State Tuition</h2>
+		<table>
+			<ol>
+				<li>$21,571 USD</li>
+				<br>
+				<li>$27,883 USD</li>
+				<br>
+				<li>$15,677 USD</li>
+			</ol>
+			<br>
+			<button id="button" onclick="hand(this)"><h1>Click Me!<h1></button>
+			<script>
+				function hand(element){
+				element.innerHTML="<h3>Before you make a decision, make sure you list out the pros and cons. </h3>"
+				element.style="background-color:#ffff00;"
+				}
+			</script>
+		</table>
+	</div>
+	
+	<div class="third-section">
+		<h2> Click this image to access embeded Website</h2>
+		<br>
+		<a href="https://www.educationconnection.com/" target="_blank">
+		<img src="education-connection.JPG" alt="education connection website" width=100% >
+	</div>
+
+	<div class="footer">
+		
+		<p><a href="mailto:xlin5@albany.edu"><h1>Send Email<h1></a></p>
+		
+	</div>
+	
+	<br>
+	<hr>
+	<br>
+
+</div>
+
+</body>
+</html>
