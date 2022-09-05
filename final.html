@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a:hover {
+  background-color: yellow;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The header will have these features*/
+header {
+  background-color: #ADFF2F;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Make two columns/boxes that are Neighbors */
+nav {
+  float: left;
+  width: 30%;
+  height: 380px; /* only for demonstration, should be removed */
+  background: #90EE90;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #f1f1f1;
+  height: 380px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* These attributes will be appiled to the footer */
+footer {
+  background-color: #ADFF2F;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Online Resources</h2>
+</header>
+
+<section>
+  <nav>
+	<h1>Videos</h1>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=7huMYp7WpsI">YouTube Website</a></li>
+	  <br>
+      <li><a href="https://www.dailymotion.com/video/x33r13o">DailyMotion Website</a></li>
+	  <br>
+      <li><a href="https://vimeo.com/208916667">Vimeo Website</a></li>
+	  <br>
+	  <li><iframe width="300" src="https://www.youtube.com/embed/7huMYp7WpsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    </ul>
+  </nav>
+  
+  <nav>
+	<h1>Images</h1>
+    <ul>
+      <li><a href="https://images.app.goo.gl/UoK7Lki52TsLdn6e8">LandScape</a></li>
+	  <br>
+      <li><a href="https://images.app.goo.gl/WYQWPp2pmhgGn7oQ6">Portrait </a></li>
+      <li><a href="https://web.stanford.edu/class/cs248/pdf/class_03_animation.pdf" target="_blank"><b><h1>PDF link for Below</h1></B></a></li>
+	  <embed src="class_03_animation.pdf" width="400" height="180"></embed>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Organizations that Offer Free Art Teaching Materials Online</h1>
+    <p></p>
+	<table>
+		<ol>
+			<li>digitalartsonline</li>
+				<br>
+				<li>mymodernmet</li>
+				<br>
+			<li>kitchentableclassroom</li>
+		</ol>
+	</table>
+  </article>
+</section>
+
+<footer>
+  <p><a href="mailto:xlin5@albany.edu"><b>Send email</b></a></p>
+</footer>
+
+
+
+<br>
+<hr>
+
+
+
+<header>
+  <h2>On Campus</h2>
+</header>
+
+<section>
+  <nav>
+	<h1>Best Schools for Art</h1>
+    <ul>
+      <li><a href="https://www.alfred.edu/academics/colleges-schools/art-design/index.cfm">SUNY Alfred</a></li>
+	  <br>
+      <li><a href="https://www.fitnyc.edu/">CUNY Fit</a></li>
+	  <br>
+      <li><a href="https://arts.columbia.edu/visual-arts">Columbia University</a></li>
+	  <br>
+	  <li><iframe width="300" src="https://www.youtube.com/embed/wddMGDPUunE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    </ul>
+  </nav>
+  
+  <nav>
+	<h1>Ranking for Art Major</h1>
+    <ul>
+      <li>24</li>
+	  <br>
+      <li>60</li>
+	  <br>
+      <li>137</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>In State Tuition</h1>
+    <p></p>
+	<table>
+		<ol>
+			<li>$16,718 USD</li>
+				<br>
+				<li>$12,165 USD</li>
+				<br>
+			<li>$61,788 USD</li>
+			<br>
+			<a href="https://images.app.goo.gl/hokAzbvAbiBU9CeF8" target="_blank">
+				<img src="School.JPG" alt="Trulli" width="360" alt="Embedded Image Girl">
+		</ol>
+	</table>
+  </article>
+</section>
+
+<footer>
+  <p><a href="mailto:xlin5@albany.edu"><b>Send email</b></a></p>
+</footer>
+
+
+
+<br>
+<hr>
+
+
+
+<header>
+  <h2>Online Degrees</h2>
+</header>
+
+<section>
+  <nav>
+	<h1>Best Online Schools for Art</h1>
+    <ul>
+      <li><a href="https://www.rmcad.edu/">Rocky Mountain College of Art + Design</a></li>
+	  <br>
+      <li><a href="https://www.liberty.edu/residential/communication-and-the-arts/bachelors/bfa-in-studio-art/">Liberty University</a></li>
+	  <br>
+      <li><a href="https://www.cmich.edu/colleges/cam/ART/Pages/default.aspx">Central Michigan University</a></li>
+	  <br>
+	  <embed src= "mqdefault_6s.webp" autostart="false"/>
+    </ul>
+  </nav>
+  
+  <nav>
+	<h1>Ranking for Art Major</h1>
+    <ul>
+      <li>93</li>
+	  <br>
+      <li>298</li>
+	  <br>
+      <li>249</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>In State Tuition</h1>
+    <p></p>
+	<table>
+		<ol>
+			<li>$21,571 USD</li>
+				<br>
+				<li>$27,883 USD</li>
+				<br>
+			<li>$15,677 USD</li>
+		</ol>
+	</table>
+  </article>
+</section>
+
+<footer>
+  <p><a href="mailto:xlin5@albany.edu"><b>Send email</b></a></p>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
